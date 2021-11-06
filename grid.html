@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div{
+        border: 5px solid gray;
+        display:grid;
+        grid-template-columns:150px 1fr;
+      }
+      #grid{
+        border: 5px solid pink;
+      }
+    </style>
+    <!--
+    display 태그는 블록, 인라인 속성을 변경하거나, none을 통해 보이지 않게 만들 수 있다.
+    -->
+    <!--
+    fr은 공간의 비율을 설정하는 속성
+    ex) grid-template-columns:150px 1fr; >> 왼쪽 150px 오른쪽은 나머지 전부(1fr)
+    ex) grid-template-columns:2fr 1fr이면 왼쪽과 오늘쪽 비율이 2:1
+    -->
+  </head>
+  <body>
+    <div id="grid">
+      <div>navigation</div>
+      <div>article</div>
+    </div>
+    <!--
+    <div></div> 단순히 디자인만을 위한 태그(블록)
+    <span></span> 단순히 디자인만을 위한 태그(인라인)
+    -->
+  </body>
+</html>
