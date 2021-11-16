@@ -3,54 +3,31 @@
 <head>
   <title>WEB1 - CSS</title>
   <meta charset="utf-8">
-  <style>
-    body{
-      margin: 0;
-    }
-    a {
-      color:black;
-      text-decoration: none;
-    }
-    h1{
-      font-size:45px;
-      text-align: center;
-      border-bottom: solid 1px gray;
-      margin: 0;
-      padding: 20px;
-    }
-    #grid ol{
-      border-right: 1px solid gray;
-      width:100px;
-      margin:0;
-      padding:20px;
-      padding-left: 30px;
-    }
-    #grid{
-      display: grid;
-      grid-template-columns: 150px 1fr;
-    }
-    #article{
-      padding: 20px;
-    }
-    #article h2{
-      margin-top: 0;
-    }
-    @media(max-width:800px){
-      #grid{
-        display: block;
-      }
-      #grid ol{
-        border-right:none;
-      }
-      h1{
-        border-bottom: none;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h1><a href="index.html">WEB</a></h1>
+  <!--
+  <input type="button" name="" value="night" onclick="
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color = 'white';
+  ">
+  <input type="button" name="" value="day" onclick="
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color = 'black';
+  ">
+  -->
+  <input type="button" name="" value="night" onclick="
+    if(true){
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white';
+    }
+    else{
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+    }"
+  >
   <div id="grid">
     <ol>
       <li><a href="1.html">HTML</a></li>
